@@ -1,0 +1,89 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #fff, #cea05eb3);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+}
+
+.form {
+  max-width: 360px;
+  max-height: 800px;
+  background: #fff;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 30px;
+  font-size: 13px;
+  animation: fadeIn 1s;
+  overflow-y: scroll;
+  box-shadow: 0 4px 10px #22222226;
+}
+
+.form input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  border: 0;
+  border-radius: 7px;
+  outline: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+}
+
+.form textarea {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  border: 0;
+  border-radius: 7px;
+  outline: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+}
+
+.form button {
+  width: 100%;
+  color: #fff;
+  -webkit-transition: all .3 ease;
+  cursor: pointer;
+  background: #333;
+  border: 0;
+  border-radius: 7px;
+  outline: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  transition: all .5s;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+  background: #555;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
