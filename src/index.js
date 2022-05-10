@@ -1,10 +1,12 @@
-import CryptoJS from 'crypto-js';
+const CryptoJS = require('./../node_modules/crypto-js');
 
 const formMessage = document.querySelector('.form__message');
 const formKey = document.querySelector('.form__key');
 const formEncrypt = document.querySelector('.form__encrypt');
 const formDecrypt = document.querySelector('.form__decrypt');
 const formResult = document.querySelector('.form__result');
+
+let message, key;
 
 const encrypt = (message = '', key = '') => {
   message = CryptoJS.AES.encrypt(message, key);
