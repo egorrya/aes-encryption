@@ -1,5 +1,3 @@
-const CryptoJS = require('./../node_modules/crypto-js');
-
 const formMessage = document.querySelector('.form__message');
 const formKey = document.querySelector('.form__key');
 const formEncrypt = document.querySelector('.form__encrypt');
