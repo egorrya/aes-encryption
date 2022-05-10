@@ -2,13 +2,14 @@
   "name": "aes-encryption",
   "version": "1.0.0",
   "description": "",
-  "default": "index.html",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "parcel index.html --dist-dir docs",
-    "build": "parcel build index.html --dist-dir docs"
+    "start": "parcel src/index.html -p 3000 --open --dist-dir docs",
+    "build:parcel": "parcel build ./src/index.html --dist-dir docs --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rm -rf dist/*"
   },
   "devDependencies": {
     "parcel": "^2.5.0"
