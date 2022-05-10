@@ -2,13 +2,13 @@
   "name": "aes-encryption",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build"
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "parcel": "^2.5.0"
